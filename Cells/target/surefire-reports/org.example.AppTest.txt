@@ -1,0 +1,26 @@
+-------------------------------------------------------------------------------
+Test set: org.example.AppTest
+-------------------------------------------------------------------------------
+Tests run: 18, Failures: 1, Errors: 4, Skipped: 0, Time elapsed: 1.534 s <<< FAILURE! - in org.example.AppTest
+asdasd(org.example.AppTest)  Time elapsed: 0.033 s  <<< ERROR!
+org.opencv.core.CvException: 
+cv::Exception: OpenCV(4.5.1) C:\build\master_winpack-bindings-win64-vc14-static\opencv\modules\imgproc\src\contours.cpp:197: error: (-210:Unsupported format or combination of formats) [Start]FindContours supports only CV_8UC1 images when mode != CV_RETR_FLOODFILL otherwise supports CV_32SC1 images only in function 'cvStartFindContours_Impl'
+
+	at org.example.AppTest.asdasd(AppTest.java:323)
+
+testSplot(org.example.AppTest)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError: expected:<8> but was:<-8>
+	at org.example.AppTest.testSplot(AppTest.java:63)
+
+dsf(org.example.AppTest)  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NullPointerException: Cannot load from object array because "df[0]" is null
+	at org.example.AppTest.dsf(AppTest.java:366)
+
+sortingTest(org.example.AppTest)  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at org.example.AppTest.sortingTest(AppTest.java:354)
+
+sortTest(org.example.AppTest)  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at org.example.AppTest.sortTest(AppTest.java:406)
+
